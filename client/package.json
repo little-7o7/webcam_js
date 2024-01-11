@@ -26,7 +26,7 @@
     },
     "scripts": {
         "start": "react-scripts --openssl-legacy-provider start",
-        "start-ngrok": "ngrok http 3000 --host-header=rewrite && react-scripts --openssl-legacy-provider start",
+        "ngrok": "ngrok http 3000 --host-header=rewrite",
         "build": "react-scripts --openssl-legacy-provider build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"

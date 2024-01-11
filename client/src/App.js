@@ -9,7 +9,7 @@ import Peer from "simple-peer"
 import io from "socket.io-client"
 import "./App.css"
 
-const socket = io.connect('https://4f65-213-230-86-14.ngrok-free.app')
+const socket = io.connect('https://693b-185-213-230-166.ngrok-free.app')
 function App() {
     const [me, setMe] = useState("")
     const [stream, setStream] = useState()

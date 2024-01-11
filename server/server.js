@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
     cors: {
-        origin: "https://0ec8-213-230-86-14.ngrok-free.app",
+        origin: "https://dbec-185-213-230-166.ngrok-free.app",
         methods: ["GET", "POST"]
     }
 })
@@ -26,7 +26,6 @@ io.on("connection", (socket) => {
     });
 });
 
-// Use ngrok to expose the server to the internet
 (async () => {
     const url = await ngrok.connect({
         addr: 8080, // the port your server is running on
